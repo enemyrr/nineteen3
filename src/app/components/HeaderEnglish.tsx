@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useRouter } from 'next/router';
 
 export default function Header() {
   const pathname = usePathname();
@@ -12,23 +11,23 @@ export default function Header() {
 
   return (
     <header>
-      <Link href="/">
+      <Link href="/en">
         <Image src="/nineteen-logo-black.svg" className="logo" alt="Logo" width={130} height={50} />
       </Link>
       <div>
         <nav>
           <ul>
-            <li className={`header-item ${isActive('/sv/projekt') ? 'active' : ''}`}>
-              <Link href="/sv/projekt" replace>Projekt</Link>
+            <li className={`header-item ${isActive('/en/projekt') ? 'active' : ''}`}>
+              <Link href="/en/projekt" replace>Projects</Link>
             </li>
-            <li className={`header-item ${isActive('/sv/techniques') ? 'active' : ''}`}>
-              <Link href="/sv/techniques" replace>Trycktekniker</Link>
+            <li className={`header-item ${isActive('/en/techniques') ? 'active' : ''}`}>
+              <Link href="/en/techniques" replace>Printing Techniques</Link>
             </li>
-            <li className={`header-item ${isActive('/sv/about') ? 'active' : ''}`}>
-              <Link href="/sv/about" replace>Om Oss</Link>
+            <li className={`header-item ${isActive('/en/about') ? 'active' : ''}`}>
+              <Link href="/en/about" replace>About Us</Link>
             </li>
-            <li className={`header-item ${isActive('/sv/contact') ? 'active' : ''}`}>
-              <Link href="/sv/contact" replace>Kontakt</Link>
+            <li className={`header-item ${isActive('/en/contact') ? 'active' : ''}`}>
+              <Link href="/en/contact" replace>Contact</Link>
             </li>
           </ul>
         </nav>

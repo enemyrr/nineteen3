@@ -1,8 +1,8 @@
 // src/app/layout.tsx
-import Header from './components/Header';
-import Mobileheader from './components/Mobileheader';
-import Footer from './components/Footer';
-import './globals.css';
+import Header from '../components/HeaderEnglish';
+import Mobileheader from '../components/MobileheaderEnglish';
+import Footer from '../components/Footer';
+import '../globals.css';
 
 export const metadata = {
   title: 'Nineteen Production',

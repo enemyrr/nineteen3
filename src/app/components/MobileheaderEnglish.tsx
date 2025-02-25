@@ -59,17 +59,17 @@ export default function Mobileheader() {
         <div className={`menu ${isMenuOpen ? 'show-menu' : 'hide-menu'}`}>
           <nav>
             <ul>
-              <li className={`header-item ${isActive('/sv/projekt') ? 'active' : ''}`}>
-                <Link href="/sv/projekt" replace onClick={closeMenu}>Projekt</Link>
+              <li className={`header-item ${isActive('/en/projekt') ? 'active' : ''}`}>
+                <Link href="/en/projekt" replace onClick={closeMenu}>Project</Link>
               </li>
-              <li className={`header-item ${isActive('/sv/techniques') ? 'active' : ''}`}>
-                <Link href="/sv/techniques" replace onClick={closeMenu}>Trycktekniker</Link>
+              <li className={`header-item ${isActive('/en/techniques') ? 'active' : ''}`}>
+                <Link href="/en/techniques" replace onClick={closeMenu}>Printing Techniques</Link>
               </li>
-              <li className={`header-item ${isActive('/sv/about') ? 'active' : ''}`}>
-                <Link href="/sv/about" replace onClick={closeMenu}>Om Oss</Link>
+              <li className={`header-item ${isActive('/en/about') ? 'active' : ''}`}>
+                <Link href="/en/about" replace onClick={closeMenu}>About Us</Link>
               </li>
-              <li className={`header-item ${isActive('/sv/contact') ? 'active' : ''}`}>
-                <Link href="/sv/contact" replace onClick={closeMenu}>Kontakt</Link>
+              <li className={`header-item ${isActive('/en/contact') ? 'active' : ''}`}>
+                <Link href="/en/contact" replace onClick={closeMenu}>Contact</Link>
               </li>
             </ul>
           </nav>

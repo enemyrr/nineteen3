@@ -6,13 +6,13 @@ export default function HomePage() {
     <>
       <div className="hero-section">
         <div className="hero-div">
-            <Link href="/projekt">
+            <Link href="/sv/projekt">
             <button>Tidigare projekt</button>
             </Link>
           <img src="/threads.png" alt="threads" />
         </div>
         <div className="hero-div">
-            <Link href="/contact">
+            <Link href="/sv/contact">
             <button>Kontakta oss</button>
             </Link>
           <img src="/orange-fabrics.png" alt="threads" />

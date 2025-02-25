@@ -53,6 +53,44 @@ header{
   display: none;
 }
 
+.menu{
+  position: absolute;
+  top: 63px;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  display: none;
+
+}
+
+.menu.hide-menu{
+  display: none;
+}
+
+.menu nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.menu {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.show-menu {
+  display: block;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
 header div{
   width: 100%;
   height: 100%;
@@ -186,12 +224,12 @@ nav{
 
 .grid-row:nth-child(odd) {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2-column layout for odd rows */
+  grid-template-columns: 1fr 1fr 1fr; /* 2-column layout for odd rows */
 }
 
 .grid-row:nth-child(even) {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3-column layout for even rows */
+  grid-template-columns: 1fr 1fr; /* 3-column layout for even rows */
 }
 
 .grid-item {
@@ -199,6 +237,29 @@ nav{
   text-align: center;
   border-right: 1px solid white;
   border-bottom: 1px solid white;  
+  position: relative;
+}
+
+
+.grid-item-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+}
+
+.grid-item:hover .grid-item-text {
+  opacity: 1;
+}
+
+.grid-item-text{
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  bottom: 0px;
+  margin: 0;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(225, 225, 225, 0.8), transparent);
 }
 
 .grid-item img{
@@ -408,14 +469,33 @@ footer{
   }
 
   .mobile-header{
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 0;
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .mobile-header div{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
   }
 
   .mobile-header ul{
-    gap: 10px;
+    gap: 30px;
+  }
+
+  .menu.show-menu{
+    display: flex;
+  }
+
+  .logo{
+    width: 100%;
   }
   /* Frontpage */
   .hero-section{
