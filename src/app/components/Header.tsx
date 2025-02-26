@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useRouter } from 'next/router';
 
 export default function Header() {
   const pathname = usePathname();
@@ -44,17 +43,17 @@ export default function Header() {
             </a>
           </li>
           <div>
-          <li className={`header-item ${isActive('/sv') ? 'active' : ''}`}>
-            <a href="/sv" rel="noopener noreferrer">
-              <span>SE</span>
-            </a>
-          </li>
-          <li>/</li>
-          <li className={`header-item ${isActive('/en') ? 'active' : ''}`}>
-            <a href="/en" rel="noopener noreferrer">
-              <span>EN</span>
-            </a>
-          </li>
+            <li className={`header-item ${isActive('/sv') ? 'active' : ''}`}>
+              <a href="/sv" rel="noopener noreferrer">
+                <span>SE</span>
+              </a>
+            </li>
+            <li>/</li>
+            <li className={`header-item ${isActive('/en') ? 'active' : ''}`}>
+              <a href="/en" rel="noopener noreferrer">
+                <span>EN</span>
+              </a>
+            </li>
           </div>
         </ul>
       </div>

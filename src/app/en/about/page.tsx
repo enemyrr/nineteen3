@@ -15,7 +15,7 @@ export default function ProjectPage() {
                 In our catalog with over 600,000 items, it can be easy to get lost.
                 We help you find the right products, from clothing to accessories and
                 exhibition materials, tailored to your project and wishes.
-                Can't find what you're looking for? Then we'll customize it for you!
+                Can&apos;t find what you&apos;re looking for? Then we&apos;ll customize it for you!
               </p>
             </div>
 
