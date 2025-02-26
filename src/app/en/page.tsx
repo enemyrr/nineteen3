@@ -9,13 +9,13 @@ export default function HomePage() {
             <Link href="en/projekt">
             <button>Projects</button>
             </Link>
-          <img src="/threads.png" alt="threads" />
+          <img src="https://pub-3635b466c9684646a3ba1cf1ed544c70.r2.dev/threads.png" alt="threads" />
         </div>
         <div className="hero-div">
             <Link href="en/contact">
             <button>Contact us</button>
             </Link>
-          <img src="/orange-fabrics.png" alt="threads" />
+          <img src="https://pub-3635b466c9684646a3ba1cf1ed544c70.r2.dev/orange-fabrics.png" alt="threads" />
         </div>
       </div>
     </>

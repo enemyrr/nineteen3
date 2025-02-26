@@ -19,7 +19,7 @@ export default function ProjectPage() {
               </p>
             </div>
 
-            <img src="../about/IMG_6158.jpg" alt="Nineteen" />
+            <img src="https://pub-3635b466c9684646a3ba1cf1ed544c70.r2.dev/IMG_6158.jpg" alt="Nineteen" />
             <div>
               <h3>Packaging & Small Details</h3>
               <p>
@@ -40,7 +40,7 @@ export default function ProjectPage() {
           </div>
         </div>
         <div className="about-us second">
-          <img src="../about/IMG_6120.jpg" alt="Nineteen" />
+          <img src="https://pub-3635b466c9684646a3ba1cf1ed544c70.r2.dev/IMG_6120.jpg" alt="Nineteen" />
           <div>
             <h3>Graphic Design Assistance</h3>
             <p>
@@ -57,7 +57,7 @@ export default function ProjectPage() {
               Express options are of course also available.
             </p>
           </div>
-          <img src="../about/IMG_6163.jpg" alt="Nineteen" />
+          <img src="https://pub-3635b466c9684646a3ba1cf1ed544c70.r2.dev/IMG_6163.jpg" alt="Nineteen" />
         </div>
       </div>
     </>
